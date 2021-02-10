@@ -8,11 +8,11 @@ import (
 
 func main() {
 	// GenerateFunc(directory, outputDir, packageName, channels, channelDefault string, overwrite bool)
-	err := bundle.GenerateFunc("manifests/0.0.1", "bundle/1", "pname", "chans", "alpha", false)
+	err := bundle.GenerateFunc("manifests/0.0.1", "bundle/bundle-0.0.1", "pname", "chans", "alpha", false)
 	if err != nil {
 		fmt.Println(err.Error())
 	}
-	err = bundle.GenerateFunc("manifests/0.0.2", "bundle/2", "pname", "chans", "alpha", false)
+	err = bundle.GenerateFunc("manifests/0.0.2", "bundle/bundle-0.0.2", "pname", "chans", "alpha", false)
 	if err != nil {
 		fmt.Println(err.Error())
 	}
